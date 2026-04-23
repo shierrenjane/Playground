@@ -2355,6 +2355,7 @@ export function UserManagementScreen() {
                       inlineEditable
                       inlinePlaceholder="Enter name"
                       variant="outlined"
+                      className="!bg-white"
                     />
                   </div>
                   <div className={styles.editUserNameBtns}>
