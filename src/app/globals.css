@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Surfaces ──────────────────────────────────────── */
+  --color-lb-bg:               #F5F5F7;
+  --color-lb-surface:          #FFFFFF;
+  --color-lb-surface-grey:     #F4F4F4;
+  --color-lb-surface-grey-dark:#E9E9E9;
+
+  /* ── On-surface (text / icon) ──────────────────────── */
+  --color-lb-on-surface:       #282828;
+  --color-lb-on-surface-2:     #7E7E7E;
+  --color-lb-on-surface-3:     #A9A9A9;
+  --color-lb-on-surface-rev:   #FFFFFF;
+  --color-lb-on-surface-blue:  #006BFF;
+
+  /* ── Lines / borders ───────────────────────────────── */
+  --color-lb-line-1:           #E9E9E9;
+  --color-lb-line-2:           #D4D4D4;
+
+  /* ── Brand ─────────────────────────────────────────── */
+  --color-lb-brand:            #006BFF;
+  --color-lb-brand-on:         #FFFFFF;
+  --color-lb-brand-light:      #F3F7FE;
+  --color-lb-brand-dark:       #E6F0FF;
+  --color-lb-brand-hover:      #005CE8;
+
+  /* ── Status — solid ────────────────────────────────── */
+  --color-lb-green:            #54A73F;
+  --color-lb-yellow:           #F2CE17;
+  --color-lb-orange:           #FF9100;
+  --color-lb-red:              #D0021B;
+  --color-lb-grey:             #A9A9A9;
+
+  /* ── Status — container (bg) ───────────────────────── */
+  --color-lb-green-bg:         #EEF6EC;
+  --color-lb-yellow-bg:        #FEFAE8;
+  --color-lb-orange-bg:        #FFF4E6;
+  --color-lb-red-bg:           #FAE6E8;
+  --color-lb-grey-bg:          #E9E9E9;
+
+  /* ── Status — text ─────────────────────────────────── */
+  --color-lb-green-text:       #52A33E;
+  --color-lb-yellow-text:      #E0B20C;
+  --color-lb-orange-text:      #E07F00;
+  --color-lb-red-text:         #D0021B;
+  --color-lb-grey-text:        #535353;
+
+  /* ── Border radius ─────────────────────────────────── */
+  --radius-lb-btn:   12px;
+  --radius-lb-card:  12px;
+  --radius-lb-input: 10px;
+  --radius-lb-sm:    8px;
+  --radius-lb-xs:    4px;
+  --radius-lb-pill:  100px;
+
+  /* ── Shadows ───────────────────────────────────────── */
+  --shadow-lb:            0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lb-filter:     4px 4px 12px 0px rgba(0, 0, 0, 0.12);
+  --shadow-lb-sticky-col: -3px 0 6px -1px rgba(0, 0, 0, 0.07);
+
+  /* ── Typography ────────────────────────────────────── */
+  --font-family-lb:       'Lato', 'Segoe UI', sans-serif;
+  --font-weight-lb-regular:  400;
+  --font-weight-lb-semibold: 600;
+  --font-weight-lb-bold:     700;
+
+  /* ── Animations ────────────────────────────────────── */
+  --animate-lb-snack-in: lb-snack-in 0.2s ease;
+}
+
+@keyframes lb-snack-in {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f5f5f7;
+  color: #282828;
+  font-family: var(--font-family-lb);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
